@@ -1,0 +1,343 @@
+const navbar = (document.getElementById("navbar").innerHTML = `<div class="row">
+                <div class="col-lg-12">
+                    <div class="header-two-content-main">
+                        <a href="index.html" class="logo-area">
+                            <img class="light" src="assets/images/logo/logo-1.svg" alt="logo">
+                            <img class="dark" src="assets/images/logo/logo-one-dark.svg" alt="logo">
+                        </a>
+                        <nav class="main-nav-area">
+                            <ul class="list-unstyled fluxi-desktop-menu">
+                                <li class="menu-item fluxi-has-dropdown">
+                                    <a href="index.html" class="fluxi-dropdown-main-element">Home</a>
+                                    
+                                </li>
+                               
+                                <li class="menu-item fluxi-has-dropdown">
+                                    <a href="service.html" class="fluxi-dropdown-main-element">Services</a>
+                                    
+                                </li>
+                                <li class="menu-item fluxi-has-dropdown">
+                                    <a href="about.html" class="fluxi-dropdown-main-element">About Us</a>
+                                  
+                                </li>
+                                <li class="menu-item fluxi-has-dropdown">
+                                    <a href="about.html" class="fluxi-dropdown-main-element">Work</a>
+                                  
+                                </li>
+                               
+
+                                <li class="menu-item"><a class="main-element fluxi-dropdown-main-element" href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-end-area">
+                            <a class="reqiest" href="#">Request a demo</a>
+                            <a href="#" class="rts-btn btn-primary-4">Contact sales</a>
+                            <div class="menu-btn" id="menu-btn">
+
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="14" width="20" height="2" fill="#1F1F25"></rect>
+                                    <rect y="7" width="20" height="2" fill="#1F1F25"></rect>
+                                    <rect width="20" height="2" fill="#1F1F25"></rect>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`);
+
+const mobilemenu = (document.getElementById(
+  "mobilemenu"
+).innerHTML = `<nav class="nav-main mainmenu-nav mt--30">
+                <ul class="mainmenu metismenu" id="mobile-menu-active">
+                    <li class="has-droupdown">
+                        <a href="index.html" class="main">Home</a>
+                    </li>
+                    <li class="has-droupdown">
+                        <a href="service.html" class="main">Services</a>
+                    </li>
+                    <li class="has-droupdown">
+                        <a href="#" class="main">Work</a>
+                        <ul class="submenu mm-collapse">
+                            <li><a class="mobile-menu-link" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="mobile-menu-link" href="single-case-studies.html">Case Studies Details</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                      <a href="about.html" class="main">About Us</a>
+                  </li>
+                    <li>
+                        <a href="contact.html" class="main">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="social-area-one pl--20 mt--100">
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            </ul>`);
+
+const footer = (document.getElementById(
+  "dynamicFooter"
+).innerHTML = `<div class="container mb--65">
+            <div class="row g-48 g-lg-0">
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <!-- single footer four wized -->
+                    <div class="single-footer-four-wized">
+                        <h5 class="title">Company</h5>
+                        <ul>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Insights</a></li>
+                        </ul>
+                    </div>
+                    <!-- single footer four wized end -->
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <!-- single footer four wized -->
+                    <div class="single-footer-four-wized">
+                        <h5 class="title">Resources</h5>
+                        <ul>
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Ask for support</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- single footer four wized end -->
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <!-- single footer four wized -->
+                    <div class="single-footer-four-wized">
+                        <h5 class="title">Social</h5>
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <!-- single footer four wized end -->
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <!-- single footer four wized -->
+                    <div class="single-footer-four-wized">
+                        <h5 class="title">Legal</h5>
+                        <ul>
+                            <li><a href="terms.html">Terms of service</a></li>
+                            <li><a href="privacy-policy.html">Privacy policy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                    <!-- single footer four wized end -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <!-- single footer four wized -->
+                    <div class="single-footer-four-wized">
+                        <h5 class="title">Newsletter</h5>
+                        <div class="footer-input-btn-between">
+                            <form action="#">
+                                <input required type="email" placeholder="Your email..">
+                                <i class="fa-regular fa-envelope"></i>
+                                <button class="rts-btn btn-primary-4">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-area-four pt--65 mt-65 border-top">
+                        <a href="#" class="logo">
+                          <h3 class="mb-0">EraHam Tech</h3>
+                            <!-- <img class="light" src="assets/images/logo/logo-1.svg" alt="logo"> -->
+                            <!-- <img class="dark" src="assets/images/logo/logo-one-dark.svg" alt="logo"> -->
+                        </a>
+                        <p>© 2024 EraHam Tech, All right reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>`);
+
+const testimonial = (document.getElementById(
+    'testimonials'
+).innerHTML = `<div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-style-one-center">
+                        <span class="pre skew-up">Clients feedback</span>
+                        <h2 class="title skew-up">What clients said</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-48 mt--0 justify-content-sm-center">
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <!-- testimonials area start -->
+                    <div class="single-testimonials-4">
+                        <div class="icon">
+                            <img src="assets/images/testimonials/shape/03.png" alt="testimonials">
+                        </div>
+                        <p class="disc">
+                            “EraHamTech is our reliable IT partner. From web development to custom software and digital marketing, their holistic approach has been instrumental in our success. Responsive and committed to quality solutions.”
+                        </p>
+                        <div class="author">
+                            <h6 class="title">Parvez Khan</h6>
+                            <p>Founder of Doctor Time</p>
+                            <img src="assets/images/testimonials/test-1.png" alt="testimonials">
+                        </div>
+                    </div>
+                    <!-- testimonials area end -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <!-- testimonials area start -->
+                    <div class="single-testimonials-4">
+                        <div class="icon">
+                            <img src="assets/images/testimonials/shape/03.png" alt="testimonials">
+                        </div>
+                        <p class="disc">
+                          EraHamTech elevated our digital marketing efforts, significantly increasing online visibility and engagement. Their dedication and industry understanding set them apart. Grateful for the positive impact on our brand.
+                        </p>
+                        <div class="author">
+                            <h6 class="title">Mohd  Zaid</h6>
+                            <p>Business Development Executive</p>
+                            <img src="assets/images/testimonials/zaid.jpeg"  alt="testimonials" style="width: 66px; height: 66px; border-radius: 50%;" >
+                        </div>
+                    </div>
+                    <!-- testimonials area end -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <!-- testimonials area start -->
+                    <div class="single-testimonials-4">
+                        <div class="icon">
+                            <img src="assets/images/testimonials/shape/03.png" alt="testimonials">
+                        </div>
+                        <p class="disc">
+                          EraHamTech transformed our online presence with SEO expertise. Increased rankings and transparent communication make them trustworthy partners for boosting SEO.
+                        </p>
+                        <div class="author">
+                            <h6 class="title">Irshad Saifi</h6>
+                            <p>Owned an EV Agency</p>
+                            <img src="assets/images/testimonials/avatars/02.png" alt="testimonials" style="width: 66px; height: 66px; border-radius: 50%;">
+                        </div>
+                    </div>
+                    <!-- testimonials area end -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <!-- testimonials area start -->
+                    <div class="single-testimonials-4">
+                        <div class="icon">
+                            <img src="assets/images/testimonials/shape/03.png" alt="testimonials">
+                        </div>
+                        <p class="disc">
+                          Phenomenal custom software solution by EraHamTech. They understood our needs, delivering a solution that streamlined our operations. Professionalism and expertise at its best.
+                        </p>
+                        <div class="author">
+                            <h6 class="title">Mousin Khan</h6>
+                            <p>Real State Contractor</p>
+                            <img src="assets/images/testimonials/mousin.png" alt="testimonials" style="width: 66px; height: 66px; border-radius: 50%;">
+                        </div>
+                    </div>
+                    <!-- testimonials area end -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <!-- testimonials area start -->
+                    <div class="single-testimonials-4">
+                        <div class="icon">
+                            <img src="assets/images/testimonials/shape/03.png" alt="testimonials">
+                        </div>
+                        <p class="disc">
+                          Exceptional web development by EraHamTech! Our site is now sleek and user-friendly, reflecting our brand perfectly. Their attention to detail and commitment to excellence exceeded our expectations. Highly recommended!
+                        </p>
+                        <div class="author">
+                            <h6 class="title">Farman Haseeb</h6>
+                            <!-- <p>Founder/CEO at Fluxi Digital</p> -->
+                            <img src="assets/images/testimonials/farru.png" style="width: 66px; height: 66px; border-radius: 50%;" alt="testimonials">
+                        </div>
+                    </div>
+                    <!-- testimonials area end -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <!-- testimonials area start -->
+                    <div class="single-testimonials-4">
+                        <div class="icon">
+                            <img src="assets/images/testimonials/shape/03.png" alt="testimonials">
+                        </div>
+                        <p class="disc">
+                            It’s like having a superpower! I’ve tried almost every alternative and competitor and haven’t found anything quite as easy to use as Fluxi.
+                        </p>
+                        <div class="author">
+                            <h6 class="title">Marry Jane</h6>
+                            <p>Writer at FPA Magzines</p>
+                            <img src="assets/images/testimonials/shape/08.png" alt="testimonials">
+                        </div>
+                    </div>
+                    <!-- testimonials area end -->
+                </div>
+            </div>
+            <div class="row mt--80">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <a href="#" class="rts-btn btn-primary-4-border arrow-rotate">View all feedbacks <i class="fa-light fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="shape-area">
+            <img class="one" src="assets/images/testimonials/shape/01.png" alt="">
+            <img class="two" src="assets/images/testimonials/shape/02.png" alt="">
+            <img class="three" src="assets/images/testimonials/shape/01.png" alt="">
+            <img class="four" src="assets/images/testimonials/shape/02.png" alt="">
+        </div>`);
+
+const projectCardList = [
+  {
+    name: "Shubh Super Speciality Center ",
+    image: "../assets/images/Projects/hms.jpeg",
+    // link: "/project-details.html",
+    shortDiscription: "Hospital Management System",
+  },
+  {
+    name: "Doctor Time",
+    image: "../assets/images/Projects/dt-4.png",
+    // link: "/project-details.html",
+    shortDiscription: "Real Time Apppointemt Management System",
+  },
+  {
+    name: "Doctor Time App",
+    image: "./../assets/images/Projects/dtApp1.png",
+    // link: "/project-details.html",
+    shortDiscription: "Real Time Apppointemt Management System",
+  },
+
+  {
+    name: "Lodge Booking System",
+    image: "../assets/images/Projects/marriage.png",
+    // link: "/project-details.html",
+    shortDiscription: "Event Orginaser",
+  },
+];
+
+const projectCard = projectCardList?.map(
+  (project, i) =>
+    ` <div class="swiper-slide" >
+    <div class="siongle-portfolio-box-style style-four">
+      <a href="single-case-studies.html" class="thumbnail">
+        <img src="${project.image}" alt="product" style='width:390px; height:300px; object-fit:cover;' />
+      </a>
+      <div class="inner-content">
+        <div class="left-content">
+          <span class="pre">${project.shortDiscription}</span>
+          <a href="single-case-studies.html">
+            <h3 class="title animated fadeIn">${project.name}</h3>
+          </a>
+        </div>
+        <div class="right">
+          <a href=${project?.link}>
+            <i class="fa-regular fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>`
+);
+
+const projects = (document.getElementById("project").innerHTML = projectCard);
