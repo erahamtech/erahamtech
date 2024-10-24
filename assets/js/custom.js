@@ -2,8 +2,8 @@ const navbar = (document.getElementById("navbar").innerHTML = `<div class="row">
                 <div class="col-lg-12">
                     <div class="header-two-content-main">
                         <a href="index.html" class="logo-area">
-                            <img class="light" src="assets/images/logo/logo-1.svg" alt="logo">
-                            <img class="dark" src="assets/images/logo/logo-one-dark.svg" alt="logo">
+                            <img class="light" src="assets/images/eralogo.png" alt="logo" style='width:150px'>
+                            <img class="dark" src="assets/images/darklogo.png" alt="logo" style='width:150px'>
                         </a>
                         <nav class="main-nav-area">
                             <ul class="list-unstyled fluxi-desktop-menu">
@@ -21,7 +21,7 @@ const navbar = (document.getElementById("navbar").innerHTML = `<div class="row">
                                   
                                 </li>
                                 <li class="menu-item fluxi-has-dropdown">
-                                    <a href="about.html" class="fluxi-dropdown-main-element">Work</a>
+                                    <a href="work.html" class="fluxi-dropdown-main-element">Work</a>
                                   
                                 </li>
                                
@@ -30,7 +30,6 @@ const navbar = (document.getElementById("navbar").innerHTML = `<div class="row">
                             </ul>
                         </nav>
                         <div class="header-end-area">
-                            <a class="reqiest" href="#">Request a demo</a>
                             <a href="#" class="rts-btn btn-primary-4">Contact sales</a>
                             <div class="menu-btn" id="menu-btn">
 
@@ -49,18 +48,15 @@ const mobilemenu = (document.getElementById(
   "mobilemenu"
 ).innerHTML = `<nav class="nav-main mainmenu-nav mt--30">
                 <ul class="mainmenu metismenu" id="mobile-menu-active">
-                    <li class="has-droupdown">
+                    <li class="">
                         <a href="index.html" class="main">Home</a>
                     </li>
-                    <li class="has-droupdown">
+                    <li class="">
                         <a href="service.html" class="main">Services</a>
                     </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main">Work</a>
-                        <ul class="submenu mm-collapse">
-                            <li><a class="mobile-menu-link" href="case-studies.html">Case Studies</a></li>
-                            <li><a class="mobile-menu-link" href="single-case-studies.html">Case Studies Details</a></li>
-                        </ul>
+                    <li class="">
+                        <a href="work.html" class="main">Work</a>
+                        
                     </li>
                     <li>
                       <a href="about.html" class="main">About Us</a>
@@ -150,9 +146,8 @@ const footer = (document.getElementById(
                 <div class="col-lg-12">
                     <div class="copyright-area-four pt--65 mt-65 border-top">
                         <a href="#" class="logo">
-                          <h3 class="mb-0">EraHam Tech</h3>
-                            <!-- <img class="light" src="assets/images/logo/logo-1.svg" alt="logo"> -->
-                            <!-- <img class="dark" src="assets/images/logo/logo-one-dark.svg" alt="logo"> -->
+                            <img class="light" src="assets/images/eralogo.png" alt="logo" style='width:150px'> 
+                            <img class="dark" src="assets/images/darklogo.png" alt="logo" style='width:150px'> 
                         </a>
                         <p>© 2024 EraHam Tech, All right reserved.</p>
                     </div>
@@ -161,7 +156,7 @@ const footer = (document.getElementById(
         </div>`);
 
 const testimonial = (document.getElementById(
-    'testimonials'
+  "testimonials"
 ).innerHTML = `<div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -264,7 +259,7 @@ const testimonial = (document.getElementById(
                             <img src="assets/images/testimonials/shape/03.png" alt="testimonials">
                         </div>
                         <p class="disc">
-                            It’s like having a superpower! I’ve tried almost every alternative and competitor and haven’t found anything quite as easy to use as Fluxi.
+                            It’s like having a superpower! I’ve tried almost every alternative and competitor and haven’t found anything quite as EraHam Tech.
                         </p>
                         <div class="author">
                             <h6 class="title">Marry Jane</h6>
@@ -275,11 +270,7 @@ const testimonial = (document.getElementById(
                     <!-- testimonials area end -->
                 </div>
             </div>
-            <div class="row mt--80">
-                <div class="col-lg-12 d-flex justify-content-center">
-                    <a href="#" class="rts-btn btn-primary-4-border arrow-rotate">View all feedbacks <i class="fa-light fa-arrow-right"></i></a>
-                </div>
-            </div>
+            
         </div>
         <div class="shape-area">
             <img class="one" src="assets/images/testimonials/shape/01.png" alt="">
@@ -341,3 +332,6 @@ const projectCard = projectCardList?.map(
 );
 
 const projects = (document.getElementById("project").innerHTML = projectCard);
+
+
+
