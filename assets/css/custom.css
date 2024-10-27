@@ -20,13 +20,12 @@
     align-items: center;
 }
 
-.floatIcon {
+/* .floatIcon {
     margin: 0;
     padding: 0;
     width: 100%;
     position: fixed;
-    /* background-color: black; */
-    /* border-radius: 15px; */
+   
     bottom: 10px;
     z-index: 9999;
     padding: 0 15px 0 15px;
@@ -35,7 +34,6 @@
 .floatIcon-inner {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     display: flex;
-    /* color: white; */
     border-radius: 15px;
     border: 1px solid black;
 
@@ -43,7 +41,6 @@
 
 .call {
     width: 75%;
-    /* background-color: #484851; */
     background-color: #fff;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -59,7 +56,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #484851; */
     background-color: #fff;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -82,9 +78,143 @@
 .callText {
     letter-spacing: 5px;
     margin-top: 5px;
+} */
+
+
+.floatIcon {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    z-index: 9999;
+    padding: 0 15px;
 }
 
+.floatIcon-inner {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid black;
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(20px); /* Start slightly below */
+    animation: fadeInUp 0.5s forwards; /* Animation on load */
+}
 
+.call {
+    position: relative; /* Position relative for shine effect */
+    width: 75%;
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflow for shine effect */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+.chat {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: 3px solid black;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+.call:hover, .chat:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+    cursor: pointer; /* Change cursor to pointer */
+    transform: scale(1.05); /* Slightly increase size */
+}
+
+.callIcon {
+    font-size: 30px;
+    padding: 5px;
+    margin-left: 15px;
+    animation: none; /* No initial animation */
+}
+
+/* Shine Effect */
+.call:before {
+    content: ''; /* Pseudo-element for shine effect */
+    position: absolute;
+    top: -20%; /* Start above the button */
+    left: -50%; /* Start off to the left */
+    width: 200%; /* Make it wider than the button */
+    height: 200%; /* Make it taller than the button */
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+    border-radius: 50%; /* Circular shape */
+    animation: shine 2s infinite; /* Shine animation */
+    transform: translateY(0) translateX(0); /* Initial position */
+}
+
+/* Keyframes for shine animation */
+@keyframes shine {
+    0% {
+        transform: translateY(-50%) translateX(-100%); /* Start position */
+    }
+    100% {
+        transform: translateY(-50%) translateX(100%); /* End position */
+    }
+}
+
+/* Keyframes for phone animation */
+@keyframes phoneAnimation {
+    0%, 100% {
+        transform: translateY(0); /* No translation */
+    }
+    25% {
+        transform: translateY(-3px); /* Move up */
+    }
+    50% {
+        transform: translateY(3px); /* Move down */
+    }
+    75% {
+        transform: translateY(-1px); /* Move up slightly */
+    }
+}
+
+/* Animation for the phone icon on hover */
+.call:hover .callIcon {
+    animation: phoneAnimation 0.5s infinite; /* Apply phone animation on hover */
+}
+
+.callText {
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0; /* Fully transparent */
+        transform: translateY(20px); /* Start slightly below */
+    }
+    to {
+        opacity: 1; /* Fully opaque */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .floatIcon-inner {
+        flex-direction: column; /* Stack the icons vertically */
+    }
+
+    .call, .chat {
+        width: 100%; /* Full width on small screens */
+        border-right: none; /* Remove borders for a cleaner look */
+        border-left: none; /* Remove borders for a cleaner look */
+        border-radius: 15px; /* Full rounded corners */
+    }
+}
 
 .hero {
     background: #007bff;
