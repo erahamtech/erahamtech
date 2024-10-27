@@ -19,3 +19,77 @@
     justify-content:center ;
     align-items: center;
 }
+
+.floatIcon{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    /* background-color: black; */
+    /* border-radius: 15px; */
+    bottom: 10px;
+    z-index: 9999;
+    padding: 0 15px 0 15px;
+}
+.floatIcon-inner{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    /* color: white; */
+    border-radius: 15px;
+    border: 1px solid black;
+
+}
+.call{
+    width: 75%;
+    /* background-color: #484851; */
+    background-color: #fff;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px;
+    border-right:3px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.chat{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #484851; */
+    background-color: #fff;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+    border-left:3px solid black ;
+
+}
+.chatIcon{
+    font-size: 35px;
+    padding: 5px;
+
+}
+.callIcon{
+    font-size: 30px ;
+    padding: 5px;
+    margin-left: 15px;
+}
+.callText{
+    letter-spacing:5px;
+    margin-top: 5px;
+}
+@media only screen and (min-width: 1199px){
+    .floatIcon{
+        width: 300px;
+        right: 30px;
+    }
+
+}
+@media screen and (max-width: 992px){
+
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 576px){
+
+}

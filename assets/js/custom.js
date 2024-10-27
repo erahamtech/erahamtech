@@ -335,3 +335,17 @@ const projects = (document.getElementById("project").innerHTML = projectCard);
 
 
 
+const FloatICon = document.getElementById("floatIcon").innerHTML = `<div class="floatIcon-inner">
+            <div class="call">
+                <a href="tel:+919557897890" class="d-flex align-items-center">
+                    <i class="fa-solid fa-phone callIcon text-primary"></i>    <span class="mx-4 callText">Call Us</span>     
+                </a>
+            </div>
+            <div class="chat">
+                <a href="https://wa.me/919557897890?text=Hello%20there!%20I%20have%20a%20question." target="_blank">
+                    <i class="fa-brands fa-whatsapp chatIcon text-success"></i>
+                </a>
+    
+            </div>
+
+        </div>`
