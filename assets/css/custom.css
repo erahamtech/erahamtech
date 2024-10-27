@@ -89,6 +89,7 @@
     bottom: 10px;
     z-index: 9999;
     padding: 0 15px;
+    color: black;
 }
 
 .floatIcon-inner {
