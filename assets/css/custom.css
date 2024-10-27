@@ -140,6 +140,9 @@
     animation: none; /* No initial animation */
 }
 
+.chatIcon{
+    font-size: 30px;
+}
 /* Shine Effect */
 .call:before {
     content: ''; /* Pseudo-element for shine effect */
@@ -204,15 +207,23 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .floatIcon-inner {
-        flex-direction: column; /* Stack the icons vertically */
-    }
+    /* .floatIcon-inner {
+        flex-direction: column; 
+    } */
 
-    .call, .chat {
-        width: 100%; /* Full width on small screens */
+    .call{
+        width: 75%; /* Full width on small screens */
         border-right: none; /* Remove borders for a cleaner look */
         border-left: none; /* Remove borders for a cleaner look */
-        border-radius: 15px; /* Full rounded corners */
+        /* border-radius: 15px; */
+
+    }
+    
+    .chat {
+        width: 25%; /* Full width on small screens */
+        border-right: none; /* Remove borders for a cleaner look */
+        /* border-left: none;  */
+        /* border-radius: 15px;  */
     }
 }
 
@@ -250,15 +261,17 @@
 }
 
 @media only screen and (min-width: 1199px) {
-    .floatIcon {
-        width: 300px;
-        right: 30px;
-    }
+   
 
 }
 
 @media screen and (max-width: 992px) {}
 
-@media screen and (max-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .floatIcon {
+        width: 300px;
+        right: 30px;
+    }
+}
 
 @media screen and (max-width: 576px) {}
