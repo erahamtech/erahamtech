@@ -1,26 +1,26 @@
-.services-icon{
+.services-icon {
     width: 75px;
     height: 75px;
 }
 
 
-.services-icon1{
+.services-icon1 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
-.icon1{
+.icon1 {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     /* background-color: rgba(0, 0, 0, 0.438); */
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
 }
 
-.floatIcon{
+.floatIcon {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -31,7 +31,8 @@
     z-index: 9999;
     padding: 0 15px 0 15px;
 }
-.floatIcon-inner{
+
+.floatIcon-inner {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     display: flex;
     /* color: white; */
@@ -39,57 +40,95 @@
     border: 1px solid black;
 
 }
-.call{
+
+.call {
     width: 75%;
     /* background-color: #484851; */
     background-color: #fff;
-    border-top-left-radius:15px ;
-    border-bottom-left-radius:15px;
-    border-right:3px solid black ;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right: 3px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.chat{
+
+.chat {
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: #484851; */
     background-color: #fff;
-    border-top-right-radius:15px ;
-    border-bottom-right-radius:15px ;
-    border-left:3px solid black ;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: 3px solid black;
 
 }
-.chatIcon{
+
+.chatIcon {
     font-size: 35px;
     padding: 5px;
 
 }
-.callIcon{
-    font-size: 30px ;
+
+.callIcon {
+    font-size: 30px;
     padding: 5px;
     margin-left: 15px;
 }
-.callText{
-    letter-spacing:5px;
+
+.callText {
+    letter-spacing: 5px;
     margin-top: 5px;
 }
-@media only screen and (min-width: 1199px){
-    .floatIcon{
+
+
+
+.hero {
+    background: #007bff;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.job-listing {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.benefits {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefits li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1199px) {
+    .floatIcon {
         width: 300px;
         right: 30px;
     }
 
 }
-@media screen and (max-width: 992px){
 
-}
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px) {}
 
-}
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px) {}
 
-}
+@media screen and (max-width: 576px) {}
