@@ -78,31 +78,20 @@ const footer = (document.getElementById(
   "dynamicFooter"
 ).innerHTML = `<div class="container mb--65">
             <div class="row g-48 g-lg-0">
-                <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <!-- single footer four wized -->
                     <div class="single-footer-four-wized">
                         <h5 class="title">Company</h5>
                         <ul>
                             <li><a href="about.html">About us</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Insights</a></li>
-                        </ul>
-                    </div>
-                    <!-- single footer four wized end -->
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-4">
-                    <!-- single footer four wized -->
-                    <div class="single-footer-four-wized">
-                        <h5 class="title">Resources</h5>
-                        <ul>
-                            <li><a href="#">Help center</a></li>
-                            <li><a href="#">Ask for support</a></li>
                             <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
                     <!-- single footer four wized end -->
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-4">
+                
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <!-- single footer four wized -->
                     <div class="single-footer-four-wized">
                         <h5 class="title">Social</h5>
@@ -114,31 +103,18 @@ const footer = (document.getElementById(
                     </div>
                     <!-- single footer four wized end -->
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <!-- single footer four wized -->
                     <div class="single-footer-four-wized">
                         <h5 class="title">Legal</h5>
                         <ul>
                             <li><a href="terms.html">Terms of service</a></li>
                             <li><a href="privacy-policy.html">Privacy policy</a></li>
-                            <li><a href="#">Cookies</a></li>
                         </ul>
                     </div>
                     <!-- single footer four wized end -->
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <!-- single footer four wized -->
-                    <div class="single-footer-four-wized">
-                        <h5 class="title">Newsletter</h5>
-                        <div class="footer-input-btn-between">
-                            <form action="#">
-                                <input required type="email" placeholder="Your email..">
-                                <i class="fa-regular fa-envelope"></i>
-                                <button class="rts-btn btn-primary-4">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
         <div class="container">

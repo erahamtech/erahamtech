@@ -3,10 +3,12 @@
 
 
 <!-- Mirrored from html.themewant.com/fluxi/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2024 03:46:26 GMT -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Contact EraHam Tech Pvt Ltd, IT services contact, tech support Aligarh, contact web development, app development inquiries, contact software development, IT consulting Aligarh, India tech company contact, contact blockchain developers" />
+    <meta name="keywords"
+        content="Contact EraHam Tech Pvt Ltd, IT services contact, tech support Aligarh, contact web development, app development inquiries, contact software development, IT consulting Aligarh, India tech company contact, contact blockchain developers" />
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
     <title>EraHam Tech Pvt Ltd</title>
@@ -23,6 +25,32 @@
     <!-- Custom css -->
     <link rel="stylesheet preload" href="assets/css/style.css" as="style">
     <link rel="stylesheet preload" href="assets/css/custom.css" as="style">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "IIw4J_NkMlpXp2lFm",
+            });
+        })();
+    </script>
+
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_it4j7jg', 'template_airt6eu', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -30,7 +58,7 @@
     <!-- header area start -->
     <header class="header-style-one header--sticky">
         <div class="container" id="navbar">
-            
+
         </div>
     </header>
     <!-- header area end -->
@@ -64,7 +92,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <form class="contact-form" action="https://html.themewant.com/fluxi/mailer.php" method="post" id="contact-form">
+                    <form class="contact-form" action="https://html.themewant.com/fluxi/mailer.php" method="post"
+                        id="contact-form">
                         <!-- single inpout-area -->
                         <div class="single-input-area">
                             <label for="name">Full name</label>
@@ -86,7 +115,8 @@
                             <i class="fa-regular fa-message"></i>
                         </div>
                         <!-- single inpout-area end -->
-                        <button type="submit" class="rts-btn btn-primary">Send message <i class="fa-solid fa-location-arrow"></i></button>
+                        <button type="submit" class="rts-btn btn-primary">Send message <i
+                                class="fa-solid fa-location-arrow"></i></button>
 
                         <!-- message send confirmation -->
                         <div id="form-messages" class="text-center text-primary mt-5 text-capitalize"></div>
@@ -128,12 +158,15 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <!-- single contact area start -->
                     <div class="single-contact-inner-info">
-                        <div class="icon">
-                            <img src="assets/images/contact/03.svg" alt="service">
-                        </div>
-                        <h5 class="title">Phone</h5>
-                        <p>+91 95578978950</p>
+                        <a href="tel:+919557897890">
+                            <div class="icon">
+                                <img src="assets/images/contact/03.svg" alt="service">
+                            </div>
+                            <h5 class="title">Phone</h5>
+
+                            <p>+91 9557897890</p>
                     </div>
+                    </a>
                     <!-- single contact area end -->
                 </div>
             </div>
@@ -144,19 +177,19 @@
 
     <!-- faq call to action area start -->
     <div class="faq-cta-main-wrapper-bg rts-section-gap2" id="testimonials">
-       
+
     </div>
     <!-- faq call to action area end -->
 
 
-   
 
 
-    
+
+
 
 
     <div class="rts-footer-area footer-four rts-section-gap" id="dynamicFooter">
-        
+
     </div>
 
 
@@ -164,26 +197,26 @@
     </div>
 
 
- <!-- tab icons -->
- <div class="floatIcon " id="floatIcon">
-    <div class="floatIcon-inner">
-        <div class="call">
-            <a href="tel:+919557897890" class="d-flex align-items-center">
-                <i class="fa-solid fa-phone callIcon text-primary"></i>    <span class="mx-4 callText">Call Us</span>     
-            </a>
-        </div>
-        <div class="chat">
-            <a href="https://wa.me/919557897890?text=Hello%20there!%20I%20have%20a%20question." target="_blank">
-                <i class="fa-brands fa-whatsapp chatIcon text-success"></i>
-            </a>
+    <!-- tab icons -->
+    <div class="floatIcon " id="floatIcon">
+        <div class="floatIcon-inner">
+            <div class="call">
+                <a href="tel:+919557897890" class="d-flex align-items-center">
+                    <i class="fa-solid fa-phone callIcon text-primary"></i> <span class="mx-4 callText">Call Us</span>
+                </a>
+            </div>
+            <div class="chat">
+                <a href="https://wa.me/919557897890?text=Hello%20there!%20I%20have%20a%20question." target="_blank">
+                    <i class="fa-brands fa-whatsapp chatIcon text-success"></i>
+                </a>
+
+            </div>
 
         </div>
 
     </div>
-        
- </div>
 
- <!-- tab icon ends -->
+    <!-- tab icon ends -->
 
 
     <!-- side bar area  -->
@@ -191,7 +224,7 @@
         <button class="close-icon-menu"><i class="fa-sharp fa-thin fa-xmark"></i></button>
         <!-- mobile menu area start -->
         <div class="mobile-menu-main" id="mobilemenu">
-            
+
         </div>
         <!-- mobile menu area end -->
     </div>
@@ -216,10 +249,10 @@
         </div>
     </div>
 
-    
+
     <!-- THEME MODE SWITCHER END -->
-        
-    
+
+
 
 
 
@@ -247,4 +280,5 @@
 
 
 <!-- Mirrored from html.themewant.com/fluxi/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2024 03:46:29 GMT -->
+
 </html>
