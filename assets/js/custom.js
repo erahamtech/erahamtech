@@ -1,7 +1,7 @@
 const navbar = (document.getElementById("navbar").innerHTML = `<div class="row">
                 <div class="col-lg-12">
                     <div class="header-two-content-main">
-                        <a href="index.html" class="logo-area">
+                        <a href="index" class="logo-area">
                             <img class="light" src="assets/images/eralogo.png" alt="logo" style='width:150px'>
                             <img class="dark" src="assets/images/darklogo.png" alt="logo" style='width:150px'>
                         </a>
