@@ -8,25 +8,25 @@ const navbar = (document.getElementById("navbar").innerHTML = `<div class="row">
                         <nav class="main-nav-area">
                             <ul class="list-unstyled fluxi-desktop-menu">
                                 <li class="menu-item fluxi-has-dropdown">
-                                    <a href="index.html" class="fluxi-dropdown-main-element">Home</a>
+                                    <a href="index" class="fluxi-dropdown-main-element">Home</a>
                                     
                                 </li>
                                
                                 <li class="menu-item fluxi-has-dropdown">
-                                    <a href="service.html" class="fluxi-dropdown-main-element">Services</a>
+                                    <a href="service" class="fluxi-dropdown-main-element">Services</a>
                                     
                                 </li>
                                 <li class="menu-item fluxi-has-dropdown">
-                                    <a href="about.html" class="fluxi-dropdown-main-element">About Us</a>
+                                    <a href="about" class="fluxi-dropdown-main-element">About Us</a>
                                   
                                 </li>
                                 <li class="menu-item fluxi-has-dropdown">
-                                    <a href="portfolio.html" class="fluxi-dropdown-main-element">Portfolio</a>
+                                    <a href="portfolio" class="fluxi-dropdown-main-element">Portfolio</a>
                                   
                                 </li>
                                
 
-                                <li class="menu-item"><a class="main-element fluxi-dropdown-main-element" href="contact.html">Contact</a></li>
+                                <li class="menu-item"><a class="main-element fluxi-dropdown-main-element" href="contact">Contact</a></li>
                             </ul>
                         </nav>
                         <div class="header-end-area">
