@@ -21,7 +21,7 @@ const navbar = (document.getElementById("navbar").innerHTML = `<div class="row">
                                   
                                 </li>
                                 <li class="menu-item fluxi-has-dropdown">
-                                    <a href="work.html" class="fluxi-dropdown-main-element">Work</a>
+                                    <a href="portfolio.html" class="fluxi-dropdown-main-element">Portfolio</a>
                                   
                                 </li>
                                
@@ -97,7 +97,7 @@ const footer = (document.getElementById(
                         <h5 class="title">Social</h5>
                         <ul>
                             <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Linkedin</a></li>
+                            <li><a href="https://www.linkedin.com/company/eraham-tech-pvt-ltd/" target="_blank">Linkedin</a></li>
                             <li><a href="#">Instagram</a></li>
                         </ul>
                     </div>
@@ -259,7 +259,7 @@ const projectCardList = [
   {
     name: "Shubh Super Speciality Center ",
     image: "../assets/images/Projects/hms.jpeg",
-    // link: "/project-details.html",
+    link: "https://sscalg.com",
     shortDiscription: "Hospital Management System",
   },
   {
@@ -287,18 +287,18 @@ const projectCard = projectCardList?.map(
   (project, i) =>
     ` <div class="swiper-slide" >
     <div class="siongle-portfolio-box-style style-four">
-      <a href="single-case-studies.html" class="thumbnail">
+      <a href="#" class="thumbnail">
         <img src="${project.image}" alt="product" style='width:390px; height:300px; object-fit:cover;' />
       </a>
       <div class="inner-content">
         <div class="left-content">
           <span class="pre">${project.shortDiscription}</span>
-          <a href="single-case-studies.html">
+          <a href="#">
             <h3 class="title animated fadeIn">${project.name}</h3>
           </a>
         </div>
         <div class="right">
-          <a href=${project?.link}>
+          <a href=${project?.link} target="_blank">
             <i class="fa-regular fa-arrow-right"></i>
           </a>
         </div>
