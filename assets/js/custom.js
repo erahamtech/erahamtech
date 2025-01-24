@@ -83,8 +83,8 @@ const footer = (document.getElementById(
                     <div class="single-footer-four-wized">
                         <h5 class="title">Company</h5>
                         <ul>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about">About us</a></li>
+                            <li><a href="contact">Contact</a></li>
                             <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
