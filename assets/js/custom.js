@@ -49,20 +49,20 @@ const mobilemenu = (document.getElementById(
 ).innerHTML = `<nav class="nav-main mainmenu-nav mt--30">
                 <ul class="mainmenu metismenu" id="mobile-menu-active">
                     <li class="">
-                        <a href="index.html" class="main">Home</a>
+                        <a href="index" class="main">Home</a>
                     </li>
                     <li class="">
-                        <a href="service.html" class="main">Services</a>
+                        <a href="service" class="main">Services</a>
                     </li>
                     <li class="">
-                        <a href="work.html" class="main">Work</a>
+                        <a href="work" class="main">Work</a>
                         
                     </li>
                     <li>
-                      <a href="about.html" class="main">About Us</a>
+                      <a href="about" class="main">About Us</a>
                   </li>
                     <li>
-                        <a href="contact.html" class="main">Contact Us</a>
+                        <a href="contact" class="main">Contact Us</a>
                     </li>
                 </ul>
             </nav>
